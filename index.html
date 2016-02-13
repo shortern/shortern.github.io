@@ -39,8 +39,9 @@
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
-
+<!-- Remodal Stylesheets-->
+<link rel="stylesheet" href="css/remodal.css">
+<link rel="stylesheet" href="css/remodal-default-theme.css">
 
 </head>
 
@@ -117,6 +118,7 @@
                                 <input type="submit" value="GO" name="subscribe" id="mc-embedded-subscribe" class="button">
                             </form>
                             <div id="notification_container"></div>
+                            <p class = "xs">* We'll keep it safe. </p>
                         </div><!--@end mc_embed_signup-->
                     </div> <!-- @end subscribe form -->
 
@@ -129,7 +131,7 @@
                 <div class="clearfix"></div>
                 <div class="row">             
                 <div class="col-sm-12">
-                    <p class="align-c">"Shortern" (n) - Skilled and busy student that is gaining professional experience that fits in with their daily schedule.</p>
+                    <p class="align-c">"Shortern" (n) - A skilled and busy student that is gaining professional experience that fits in with their daily schedule.</p>
                     <p class="align-c">"Shorternship" (n) - Opportunity for a Shortern to gain meaningful experience in their industry.</p>
                 </div>
             </div><!--@End row --> 
@@ -150,7 +152,7 @@
                 <!-- Heading -->
                 <div data-scrollReveal class="col-sm-12 title-c">
                     <h2>WE ARE REINVENTING THE MARKET FOR INTERNS</h2>
-                    <p>Interns are superstars, but around midterms they need a break. Shorternships are designed for active students to gain valuable work experience without needing to put their education or on campus activities at stake. The premise is simple, hire an intern for a project. Think of it like hiring a freelancer, but this is a eager to learn freelancer that is gaining valuable work experience, hopefully so they can come back post-grad and take a full time position. </p>
+                    <p>Interns are superstars, but around midterms they need a break. Shorternships are designed for active students to gain valuable work experience without needing to put their education or on-campus activities at stake. The premise is simple: hire an intern for a project. Think of it like hiring a freelancer, except this person is driven to gain valuable work experience.</p>
                 </div>  
 
                 <!-- Cell -->
@@ -162,7 +164,7 @@
                             <p><i class="fa fa-tachometer"></i> Gain valuable work experience with flexibility</p> 
                             <p><i class="fa fa-tachometer"></i> Find and apply to awesome opportunities with ease</p> 
                             <p><i class="fa fa-tachometer"></i> Build a great network and portfolio ready for graduation</p> 
-                            <p><i class="fa fa-tachometer"></i> Get the all important recommendation for a job well done</p> 
+                            <p><i class="fa fa-tachometer"></i> Get the all important recommendations for a job well done</p> 
                         </div>
                     </div>
                 </div>
@@ -187,11 +189,6 @@
 
 
 
-
-
-
-
-
     <!--///////////////////////////////-->
     <!-- Call to action Section-7 /////////////-->
     <!--///////////////////////////////-->
@@ -209,6 +206,39 @@
     </section>
 
 
+<div class="remodal" data-remodal-id="modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+      <!-- Facebook SDK -->
+      <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '687909644645744',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+    <!-- Your share button code -->
+
+  <p>Share:</p>
+  <div class="fb-share-button" data-href="http://www.shortern.com" data-layout="link"></div>
+  <br>
+  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+</div>
+
+
     <!--///////////////////////////////-->
     <!-- Java Script  /////////////-->
     <!--///////////////////////////////-->
@@ -221,6 +251,9 @@
 
     <!-- Custom Scripts -->
     <script src="js/custom.js"></script>
+
+    <!-- Remodal Scripts -->
+    <script src="js/remodal.min.js"></script>
 
     <!-- Scroll Nav -->
     <script src="js/jquery.scrollTo.js"></script>
