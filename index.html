@@ -272,7 +272,10 @@
       ga('create', 'UA-28030656-2', 'auto');
       ga('send', 'pageview');
 
-    </script>
+      setTimeout(function(){_gaq.push(['_trackEvent', 'Control', 'Bounce Rate', ''])},3000)
+      }
+    }
 
+    </script>
 </body>
 </html>
