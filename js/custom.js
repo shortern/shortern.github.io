@@ -103,8 +103,8 @@ jQuery( function ( $ ) {
                 else {
                   var message = data.msg;
                   $('#notification_container').html('<span class="success">'+message+'</span>');
-                  // var inst = $('[data-remodal-id=modal]').remodal();
-                  // inst.open();
+                  var inst = $('[data-remodal-id=modal]').remodal();
+                  inst.open();
                 }
               }
             });
